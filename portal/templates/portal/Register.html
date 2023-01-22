@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAIICT Interiew Experiences Register</title>
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+</head>
+<body>
+
+    <div class='centered2'>DA-IICT Interview Experiences<br><hr width="90%" class="hrtag"><hr width="90%" class="hrtag2"></div>
+
+    <form action="" method="POST" onSubmit="return checkpass(this)">
+
+        {% csrf_token %}
+        
+        {% if error %}
+        <div class="err2" align="centered">
+            {{error}}
+        </div>
+        {% endif %}
+        <input type="text" placeholder="First Name" name="uname" class='uname' required pattern="[A-Za-z]{2,}" title="at least 4 alphabet characters long...(only uppercase or lowercase alphabets)">
+        <input type="text" placeholder="Last Name" name="lname" class='lname' required pattern="[A-Za-z]{2,}" title="at least 4 alphabet characters long...(only uppercase or lowercase alphabets)">
+        <input type="text" placeholder="E-mail Address" name="email" class='mail2' required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="eg. characters@character.domain">
+
+        <input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" class='pass' required title="must contain 8 or more characters with at least 1 number, 1 uppercase and 1 lowercase letter">
+        <input type="password" placeholder="Confirm Password" name="confirm_password" class='cpass' required>
+
+        <select class="sel" name="selectD" id="selDegree">
+            <option hidden selected value="">Select Degree</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="M.tech">M.Tech</option>
+            <option value="Ph.D">Ph.D</option>
+        </select>
+        <input type="text" placeholder="Program of Study" name="pstudy" class='pstudy' required>
+        <input type="text" placeholder="Graduation Year" name="gyear" class='gyear' required pattern="[0-9]{4,4}" title="Input only your year of graduation">
+
+        <p><a href="{% url 'login' %}" class='log'>Click here to Login</a></p>
+        <button type="submit" class='Register' id="submit">Register</button>
+        
+    </form>
+
+    <script>
+    $(document).ready(function () {
+        $("#submit").click(function () {
+
+            var degree = $('#selDegree');
+            if (degree.val() === '') {
+                alert("Please select an item from the list and then proceed!");
+                $('#selDegree').focus();
+
+                return false;
+            }
+            else return;
+        });
+    });
+
+    function checkpass(form)
+    {
+        p1= form.password.value;
+        p2= form.confirm_password.value;
+
+        if(p1!=p2)
+        {
+            alert("Password did not match: Try again!!!");
+            return false;
+        }
+    }
+    </script>
+
+</body>
+</html>

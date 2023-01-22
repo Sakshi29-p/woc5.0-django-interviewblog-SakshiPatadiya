@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAIICT Interiew Experiences Login</title>
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+</head>
+<body>
+
+    <div class='centered'>DA-IICT Interview Experiences</div>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {% if error %}
+        <div class="err" align="centered">
+            {{error}}
+        </div>
+        {% endif %}
+
+        <input type="text" placeholder="E-mail Address" name="email" class='mail' required>
+        <input type="password" placeholder="Password" name="password" class='pass' required>
+        <button type="submit" class='Login'>Login</button>
+        <p><a href="{% url 'register' %}" class='reg'>Click here to Register</a></p>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,342 @@
+body{
+    background-color: #212528;
+    margin: 0;
+}
+
+.centered {
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    margin-top: -50px;
+    margin-left: -100px;
+    background-color: black;
+    border-radius: 25px;
+    height:300px;
+    width:600px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 35px;
+    font-style: bold;
+    font-family: Sans-serif;
+  }
+
+.idea{
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    margin-top: 120px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:40px;
+    width:500px;
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.idea a{
+    text-decoration: none;
+    color: white;
+}
+
+.idea2{
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    margin-top: 180px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:40px;
+    width:500px;
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.idea2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.mail{
+    position: fixed;
+    top: 25%;
+    left: 34.5%;
+    margin-top: 80px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: #212528;
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+.pass{
+    position: fixed;
+    top: 25%;
+    left: 34.5%;
+    margin-top: 130px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: #212528;
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+.Login{
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    margin-top: 220px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:40px;
+    width:500px;
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.reg{
+    position: fixed;
+    top: 25%;
+    left: 43.5%;
+    margin-top: 180px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    text-decoration: none;
+}
+
+.centered2 {
+    position: fixed;
+    top: 15%;
+    left: 37%;
+    margin-top: -50px;
+    margin-left: -100px;
+    background-color: black;
+    border-radius: 25px;
+    height:600px;
+    width:550px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 35px;
+    font-style: bold;
+    font-family: Sans-serif;
+  }
+
+.uname{
+    position: fixed;
+    top: 25%;
+    left: 34.5%;
+    margin-top: -30px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: #212528;
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+.lname{
+    position: fixed;
+    top: 25%;
+    left: 34.5%;
+    margin-top: 15px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: #212528;
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+.hrtag{
+    top: 50px;
+    margin-top: 32%;
+}
+
+.mail2{
+    position: fixed;
+    top: 25%;
+    left: 34.5%;
+    margin-top: 60px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: #212528;
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+.cpass{
+    position: fixed;
+    top: 25%;
+    left: 34.5%;
+    margin-top: 175px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: #212528;
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+.hrtag2{
+    top: 50px;
+    margin-top: 20.8%;
+}
+
+.pstudy{
+    position: fixed;
+    top: 25%;
+    left: 34.5%;
+    margin-top: 290px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: #212528;
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+.gyear{
+    position: fixed;
+    top: 25%;
+    left: 34.5%;
+    margin-top: 335px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: #212528;
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+.sel{
+    position: fixed;
+    top: 25%;
+    left: 34.5%;
+    margin-top: 245px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:35px;
+    width:515px;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: #212528;
+    border-color: white;
+    padding-left: 10px;
+    color: white;
+}
+
+.log{
+    position: fixed;
+    top: 25%;
+    left: 43.5%;
+    margin-top: 390px;
+    border-radius: 5px;
+    height:30px;
+    width:500px;
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    text-decoration: none;
+}
+
+.Register{
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    margin-top: 430px;
+    margin-left: -22px;
+    border-radius: 5px;
+    height:40px;
+    width:500px;
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Sans-serif;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.err{
+    color: white;
+    margin-left: 650px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.err2{
+    color: white;
+    margin-left: 650px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.final{
+    color: white;
+}
